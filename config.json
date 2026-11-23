@@ -1,10 +1,9 @@
 {
-  "webhook_url": "https://discord.com/api/webhooks/WSTAW_TUTAJ",
   "username": "OLXautaBot",
   "color": "#8B5CF6",
   "interval_seconds": 60,
   "max_age_hours": 24,
-  "post_on_first_run": 3,
+  "post_on_first_run": 1,
   "design": {
     "title": "🚗 Nowe auto na OLX!",
     "button_text": "Zobacz na OLX",
@@ -22,8 +21,89 @@
   },
   "searches": [
     {
-      "name": "Wszystkie samochody",
-      "url": "https://www.olx.pl/motoryzacja/samochody/q-samochody/?search%5Border%5D=created_at:desc"
+      "name": "Cała Polska",
+      "channel_id": "1574534286848168017",
+      "url": "https://www.olx.pl/motoryzacja/samochody/?search%5Border%5D=created_at:desc"
+    },
+    {
+      "name": "Dolnośląskie",
+      "channel_id": "1574530413039321159",
+      "url": "https://www.olx.pl/motoryzacja/samochody/dolnoslaskie/?search%5Border%5D=created_at:desc"
+    },
+    {
+      "name": "Kujawsko-pomorskie",
+      "channel_id": "1574530473969983578",
+      "url": "https://www.olx.pl/motoryzacja/samochody/kujawsko-pomorskie/?search%5Border%5D=created_at:desc"
+    },
+    {
+      "name": "Lubelskie",
+      "channel_id": "1574530530018332692",
+      "url": "https://www.olx.pl/motoryzacja/samochody/lubelskie/?search%5Border%5D=created_at:desc"
+    },
+    {
+      "name": "Lubuskie",
+      "channel_id": "1574530580014436614",
+      "url": "https://www.olx.pl/motoryzacja/samochody/lubuskie/?search%5Border%5D=created_at:desc"
+    },
+    {
+      "name": "Łódzkie",
+      "channel_id": "1574530609102065786",
+      "url": "https://www.olx.pl/motoryzacja/samochody/lodzkie/?search%5Border%5D=created_at:desc"
+    },
+    {
+      "name": "Małopolskie",
+      "channel_id": "1574530632896348201",
+      "url": "https://www.olx.pl/motoryzacja/samochody/malopolskie/?search%5Border%5D=created_at:desc"
+    },
+    {
+      "name": "Mazowieckie",
+      "channel_id": "1574530667092639804",
+      "url": "https://www.olx.pl/motoryzacja/samochody/mazowieckie/?search%5Border%5D=created_at:desc"
+    },
+    {
+      "name": "Opolskie",
+      "channel_id": "1574530695584546937",
+      "url": "https://www.olx.pl/motoryzacja/samochody/opolskie/?search%5Border%5D=created_at:desc"
+    },
+    {
+      "name": "Podkarpackie",
+      "channel_id": "1574530927969964164",
+      "url": "https://www.olx.pl/motoryzacja/samochody/podkarpackie/?search%5Border%5D=created_at:desc"
+    },
+    {
+      "name": "Podlaskie",
+      "channel_id": "1574530988665606206",
+      "url": "https://www.olx.pl/motoryzacja/samochody/podlaskie/?search%5Border%5D=created_at:desc"
+    },
+    {
+      "name": "Pomorskie",
+      "channel_id": "1574531020856893520",
+      "url": "https://www.olx.pl/motoryzacja/samochody/pomorskie/?search%5Border%5D=created_at:desc"
+    },
+    {
+      "name": "Śląskie",
+      "channel_id": "1574531053874585710",
+      "url": "https://www.olx.pl/motoryzacja/samochody/slaskie/?search%5Border%5D=created_at:desc"
+    },
+    {
+      "name": "Świętokrzyskie",
+      "channel_id": "1574531117237674005",
+      "url": "https://www.olx.pl/motoryzacja/samochody/swietokrzyskie/?search%5Border%5D=created_at:desc"
+    },
+    {
+      "name": "Warmińsko-mazurskie",
+      "channel_id": "1574531141829009428",
+      "url": "https://www.olx.pl/motoryzacja/samochody/warminsko-mazurskie/?search%5Border%5D=created_at:desc"
+    },
+    {
+      "name": "Wielkopolskie",
+      "channel_id": "1574531170845331528",
+      "url": "https://www.olx.pl/motoryzacja/samochody/wielkopolskie/?search%5Border%5D=created_at:desc"
+    },
+    {
+      "name": "Zachodniopomorskie",
+      "channel_id": "1574531196547891271",
+      "url": "https://www.olx.pl/motoryzacja/samochody/zachodniopomorskie/?search%5Border%5D=created_at:desc"
     }
   ]
 }
