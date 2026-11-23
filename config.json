@@ -1,11 +1,11 @@
 {
-  "webhook_url": "https://discord.com/api/webhooks/ВСТАВЬ_СЮДА_ССЫЛКУ_ВЕБХУКА",
-  "username": "OLX Авто",
+  "webhook_url": "https://discord.com/api/webhooks/WSTAW_TUTAJ",
+  "username": "OLXautaBot",
   "color": "#8B5CF6",
   "interval_seconds": 60,
   "max_age_hours": 24,
   "post_on_first_run": 3,
-  "design": { 
+  "design": {
     "title": "🚗 Nowe auto na OLX!",
     "button_text": "Zobacz na OLX",
     "footer": "To już {n}. auto od bota • {search}",
@@ -20,12 +20,10 @@
       "location": "📍 Lokalizacja"
     }
   },
-    }
-  },
   "searches": [
     {
-      "name": "Wszystkie samachody",
-      "url": "https://www.olx.pl/motoryzacja/samochody/q-samochody/"
+      "name": "Wszystkie samochody",
+      "url": "https://www.olx.pl/motoryzacja/samochody/q-samochody/?search%5Border%5D=created_at:desc"
     }
   ]
 }
