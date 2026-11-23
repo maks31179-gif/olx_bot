@@ -1,0 +1,29 @@
+{
+  "webhook_url": "https://discord.com/api/webhooks/ВСТАВЬ_СЮДА_ССЫЛКУ_ВЕБХУКА",
+  "username": "OLX Авто",
+  "color": "#8B5CF6",
+  "interval_seconds": 60,
+  "max_age_hours": 24,
+  "post_on_first_run": 3,
+  "design": {
+    "title": "🚗 Новое авто на OLX!",
+    "button_text": "Открыть на OLX",
+    "footer": "Уже {n}-е авто от бота • {search}",
+    "avatar_url": "",
+    "big_photo": false,
+    "labels": {
+      "car": "🚘 Авто",
+      "price": "💰 Цена",
+      "year": "📅 Год",
+      "mileage": "🛣️ Пробег",
+      "fuel": "⛽ Топливо",
+      "location": "📍 Город"
+    }
+  },
+  "searches": [
+    {
+      "name": "Wszystkie samachody",
+      "url": "https://www.olx.pl/motoryzacja/q-samochody/?search%5Border%5D=created_at:desc"
+    }
+  ]
+}
