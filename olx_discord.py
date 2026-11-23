@@ -204,17 +204,20 @@ def discord_post(webhook_url, payload):
                 return True
         except urllib.error.HTTPError as e:
             if e.code == 429:
+                body = e.read()[:300]
                 try:
-                    wait = float(json.loads(e.read().decode()).get("retry_after", 2))
+                    wait = float(json.loads(body.decode()).get("retry_after", 2))
                 except Exception:
-                    wait = 2
-                time.sleep(wait + 0.5)
+                    wait = 5
+                log(f"  Discord: слишком много запросов (429), жду {wait:.0f} c. Ответ: {body[:150]!r}")
+                time.sleep(min(wait, 30) + 0.5)
                 continue
             log(f"  Discord ответил ошибкой {e.code}: {e.read()[:300]!r}")
             return e.code
         except urllib.error.URLError as e:
             log(f"  нет связи с Discord: {e}")
             time.sleep(3)
+    log("  НЕ УДАЛОСЬ отправить сообщение в Discord после 5 попыток")
     return False
 
 
@@ -342,6 +345,9 @@ def check_search(search, cfg, seen):
             payload["content"] = search["mention"]
         if send_message(webhook, payload):
             seen["__count__"] = number
+            log(f"  отправлено в Discord: {ad['title']}")
+        else:
+            log(f"  не отправлено: {ad['title']}")
         time.sleep(1.2)
 
     known.extend(a["id"] for a in new)
