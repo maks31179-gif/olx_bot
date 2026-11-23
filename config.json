@@ -5,25 +5,27 @@
   "interval_seconds": 60,
   "max_age_hours": 24,
   "post_on_first_run": 3,
-  "design": {
-    "title": "🚗 Новое авто на OLX!",
-    "button_text": "Открыть на OLX",
-    "footer": "Уже {n}-е авто от бота • {search}",
+  "design": { 
+    "title": "🚗 Nowe auto na OLX!",
+    "button_text": "Zobacz na OLX",
+    "footer": "To już {n}. auto od bota • {search}",
     "avatar_url": "",
     "big_photo": false,
     "labels": {
-      "car": "🚘 Авто",
-      "price": "💰 Цена",
-      "year": "📅 Год",
-      "mileage": "🛣️ Пробег",
-      "fuel": "⛽ Топливо",
-      "location": "📍 Город"
+      "car": "🚘 Auto",
+      "price": "💰 Cena",
+      "year": "📅 Rok",
+      "mileage": "🛣️ Przebieg",
+      "fuel": "⛽ Paliwo",
+      "location": "📍 Lokalizacja"
+    }
+  },
     }
   },
   "searches": [
     {
       "name": "Wszystkie samachody",
-      "url": "https://www.olx.pl/motoryzacja/q-samochody/?search%5Border%5D=created_at:desc"
+      "url": "https://www.olx.pl/motoryzacja/samochody/q-samochody/"
     }
   ]
 }
